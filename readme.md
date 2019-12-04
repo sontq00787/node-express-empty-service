@@ -20,3 +20,6 @@ rm env.sample .env
 ```
 node index.js
 ```
+
+# Coding & Publishing
+- Sử dụng `eslint` để check cú pháp
