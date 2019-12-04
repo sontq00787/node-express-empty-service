@@ -1,14 +1,16 @@
 var express = require('express');
 var router = express.Router();
 
-var sampleController = require('../controller/sampleController');
+var ssnController = require('../controller/ssnController');
 
-router.route('/sample/info').get( function(req, res, next) {
-    res.send("Insurance info test")
+router.route('/sample/info').get(function (req, res, next) {
+    res.send("KYC info test")
+}).post(function (req, res, next) {
+    res.send("KYC info test")
 })
 
-router.route('/sample')
-    .get(sampleController.samplePost)
-    .post(sampleController.samplePost)
+router.route('/verify')
+    .get(ssnController.sampleGet)
+    .put(ssnController.updateVerify)
 
 module.exports = router;

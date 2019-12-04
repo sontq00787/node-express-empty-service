@@ -1,9 +1,14 @@
 'use strict';
 var sql = require('./db')
 
+//SSN object constructor
+var Kyc = function(kyc) {
+    this.created_at = new Date();
+}
+
 module.exports = {
+    Kyc,
     samplePost,
-    sampleGet,
 }
 
 async function samplePost(info) {
@@ -14,8 +19,4 @@ async function samplePost(info) {
         console.error(error)
         return null
     }
-}
-
-function sampleGet() {
-    return [{ "data": "sample data" }];
 }

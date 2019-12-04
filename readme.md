@@ -1,4 +1,4 @@
-# Empty Service
+# Accounts Service
 Mẫu source code base cho dự án nodejs + express 
 
 # Install Guide
@@ -11,6 +11,9 @@ npm i
 ```
 
 2. Đổi tên `env.sample` => `.env`, cấu hình các thông tin phù hợp
+```
+rm env.sample .env
+```
 
 3. Chạy project
 
