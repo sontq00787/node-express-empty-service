@@ -1,4 +1,4 @@
-const ssnModel = require('../model/ssn');
+const sampleModel = require('../model/sampleModel');
 
 module.exports = {
     updateVerify,
